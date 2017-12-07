@@ -1,0 +1,126 @@
+body{
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+	ul{
+		list-style: none;
+	}
+}
+a{
+	text-decoration: none;
+}
+$color-header: #4b5a65;
+$color-white: #fff;
+
+.main_text1{
+	color: $color-white;
+	font-family:'Myriad Pro', regular;
+	font-size: 15px;
+}
+.main_text2{
+	color: $color-white;
+	font-family:'Myriad Pro', regular;
+	font-weight: bold;
+	font-size: 47px;
+}
+.main_text3{
+	color: $color-white;
+	font-family:'Myriad Pro', regular;
+	font-size: 16px;
+	color: #d4d4d5;
+}
+.main_text4{
+	color: $color-white;
+	font-family:'Myriad Pro', regular;
+	font-size: 16px;
+	color: #a0a0a0;
+}
+
+.container{
+	max-width: 978px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+body{
+	background-color: #fff;
+}
+header{
+	background-color: $color-header;
+}
+.nav{
+	padding: 37px 0;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	&_logo{
+		font-family: 'Pacifico', regular;
+		color: $color-white;
+		font-size: 31px;
+	}
+	ul{ display: flex;
+		flex-flow: row;
+		li{	display: inline-block;
+			margin-left: 15px;
+			a{	
+				@extend .main_text1;
+				padding: 8px 20px 5px;
+
+			&:hover {
+				background-color: #424d56;
+				border-radius: 20px;
+				border-bottom: 1px solid rgb(145, 150, 153);
+				border-top: 1px solid rgb(68, 68, 68);
+			}
+
+			}
+		}
+	}
+}
+.banner{
+	padding-top: 32px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	&_content{
+		margin-left: 115px;
+		&_title{
+			@extend .main_text2;	
+		}
+		&_title1{
+			@extend .main_text3;
+			padding-top: 15px;
+			line-height: 1.5;	
+		}
+		&_title2{
+			padding-top: 15px;
+			@extend .main_text4;
+			line-height: 1.5;	
+		}
+	}
+}
+.mybtn{
+	padding: 16px 37px;
+	background-color:rgb(48, 125, 170);
+	border-radius: 70px;
+	// border-bottom: 1px solid rgb(145, 150, 153);
+	// border-top: 1px solid rgb(68, 68, 68);
+	background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+	border: none;
+	box-shadow: 3px rgb(0, 0, 0);	
+	transition: all 0.3s;
+	&:focus{
+		outline: none;
+	}
+	&:hover{
+		background-color:rgb(68, 145, 190);
+		cursor: pointer;
+	}
+}
+
+	
+
+
+
+
+

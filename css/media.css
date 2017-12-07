@@ -1,0 +1,11 @@
+@media only screen and (min-width: 620px) {
+  .hamb {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .nav ul {
+    display: none;
+  }
+}
