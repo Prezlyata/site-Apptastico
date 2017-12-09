@@ -9,3 +9,24 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 920px) {
+  .banner_img {
+    display: none;
+  }
+  .banner_content {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .banner_content_connect {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 421px) {
+  .sponsors_content {
+    justify-content: center;
+  }
+}
