@@ -40,3 +40,10 @@
     padding-bottom: 40px;
   }
 }
+
+@media only screen and (max-width: 889px) {
+  .projects_photo {
+    display: flex;
+    justify-content: center;
+  }
+}

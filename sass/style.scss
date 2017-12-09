@@ -206,3 +206,27 @@ main{
 		width: 31%;
 	}
 }
+.projects{
+	padding-top: 94px;
+	&_title{
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-start;
+		padding: 10px 0;
+		h1 {
+			margin: 0;
+			@extend.text_title;
+		}
+		img{
+			width: 22px;
+			height: 22px;
+			padding-right: 10px;
+		}
+	}
+	&_photo{
+		padding-top: 20px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+}
