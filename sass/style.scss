@@ -36,7 +36,16 @@ $color-white: #fff;
 	font-size: 16px;
 	color: #a0a0a0;
 }
-
+.text_title{
+	color: #8395a2;
+	font-family:'Myriad Pro', regular;
+	font-size: 20px;
+}
+.text_content{
+	color: #a4a4a4;
+	font-family:'Myriad Pro', regular;
+	font-size: 14px;
+}
 .container{
 	max-width: 978px;
 	margin: 0 auto;
@@ -138,7 +147,32 @@ header{
 	background-image: -webkit-linear-gradient(93deg, #3f51b5 0%, #00bbd4 100%);
 	color: #fff;
 }
+.bttn-gradient2 {
+	border-width: 0;
+	border-color: transparent;
+	background: transparent;
+	cursor: pointer;
+	position: relative;
+	font-size: 16px;
+	font-family: 'Myriad Pro', regular;
+	padding: 12px 30px;
+	overflow: hidden;
+	-webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+	transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.bttn-gradient2:hover{
+	opacity: 0.75;	
+}
+.bttn-gradient2{
+	border-radius: 5px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #429dd5), color-stop(1, #3f51b5));
+	background-image: -webkit-linear-gradient(top, #00bbd4 0%, #3f51b5 100%);
+	background-image: linear-gradient(to bottom, #00bbd4 0%, #3f51b5 100%);
+	background-image: -webkit-linear-gradient(93deg, #3f51b5 0%, #00bbd4 100%);
+	color: #fff;
+}
 .sponsors {
+	border-bottom: 1px solid #c3c3c3;
 	background-color: #ececec;
 	padding: 19px 0 16px;
 	text-align: center;
@@ -146,5 +180,29 @@ header{
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
+	}
+}
+.services{
+	&_use{
+		h1{
+			@extend.text_title;
+		}
+		p{
+			@extend.text_content;
+			line-height: 1.5;
+		}
+	}
+}
+main{
+	background-color: #f3f3f3;
+	padding-top: 96px;
+}
+.services{
+	text-align: center;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	&_use{
+		width: 31%;
 	}
 }
