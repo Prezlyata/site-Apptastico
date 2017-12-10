@@ -8,9 +8,15 @@
 		display: none;
 	}
 }
-
+@media only screen and (max-width: 1010px) {
+	.navigation{
+		margin: 0 10px;
+	}
+}
 @media only screen and (max-width: 920px) {
 	.banner{
+		margin: 0 10px;
+		padding-bottom: 25px;
 		&_img{
 			display: none;
 		}
@@ -21,6 +27,9 @@
 				display: flex;
 				flex-flow: column wrap;
 				align-items:center;
+				button{
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}
@@ -34,6 +43,7 @@
 }
 @media only screen and (max-width: 612px) {
 	.services{
+		margin: 0 10px;
 		flex-flow: column;
 		&_use{
 			width: 100%;
@@ -43,10 +53,36 @@
 }
 @media only screen and (max-width: 889px) {
 	.projects{
+		margin: 0 10px;
 		&_photo{
 			display: flex;
 			justify-content:center;
 		
 		}
+	}
+}
+@media only screen and (max-width: 850px) {
+	.blog{
+		display: flex;
+		flex-flow: column;
+		justify-content:center;
+		margin: 0 10px;
+	}
+	.blog_left{
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+		justify-content:center;
+	}
+	.blog_right{
+		display: flex;
+		flex-flow: column;
+		width: 100%;
+		justify-content:center;
+	}
+}
+@media only screen and (max-width: 850px) {
+	.fot{
+		margin: 0 10px;
 	}
 }
